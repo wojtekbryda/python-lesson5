@@ -7,9 +7,10 @@ pygame.display.set_caption("pierwsza gra")
 
 x = 50
 y = 440
-width = 40
-height = 60
+width = 50
+height = 50
 vel = 5
+
 
 isJump = False
 jumpVelUp = 10
