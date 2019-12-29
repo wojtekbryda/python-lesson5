@@ -5,15 +5,15 @@ win = pygame.display.set_mode((500, 500))
 
 pygame.display.set_caption("pierwsza gra")
 
-x = 50
+x = 60
 y = 440
-width = 40
+width = 60
 height = 60
 vel = 5
 
 
 isJump = False
-jumpVelUp = 10
+jumpVelUp = 20
 jumpVelDown = 0
 
 run = True
@@ -35,12 +35,12 @@ while run:
             y = y - jumpVelUp
             jumpVelUp = jumpVelUp - 1
         else:
-            if (jumpVelDown <= 11):
+            if (jumpVelDown <= 21):
                 y = y + jumpVelDown
                 jumpVelDown = jumpVelDown + 1
-                if jumpVelDown == 11:
+                if jumpVelDown == 21:
                     isJump = False
-                    jumpVelUp = 10
+                    jumpVelUp = 20
                     jumpVelDown = 0
 
     # if keys[pygame.K_UP] and y > 0:
