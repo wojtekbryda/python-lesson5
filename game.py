@@ -7,13 +7,13 @@ pygame.display.set_caption("pierwsza gra")
 
 x = 60
 y = 440
-width = 60
+width = 40
 height = 60
 vel = 5
 
 
 isJump = False
-jumpVelUp = 20
+jumpVelUp = 10
 jumpVelDown = 0
 
 run = True
@@ -35,12 +35,12 @@ while run:
             y = y - jumpVelUp
             jumpVelUp = jumpVelUp - 1
         else:
-            if (jumpVelDown <= 21):
+            if (jumpVelDown <= 11):
                 y = y + jumpVelDown
                 jumpVelDown = jumpVelDown + 1
-                if jumpVelDown == 21:
+                if jumpVelDown == 11:
                     isJump = False
-                    jumpVelUp = 20
+                    jumpVelUp = 10
                     jumpVelDown = 0
 
     # if keys[pygame.K_UP] and y > 0:
